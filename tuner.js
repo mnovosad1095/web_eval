@@ -1,9 +1,9 @@
-function tune(g_strings) {
+function tune(arr) {
     const freqs = [329.63, 246.94, 196, 
                    146.83, 110, 82.41];
     let res = [];
     for (var i = 0; i < freqs.length; ++i) {
-        res[i] = tune_string(g_strings[i], freqs[i])
+        res[i] = tune_string(arr[i], freqs[i])
     }
     return res;
 }
